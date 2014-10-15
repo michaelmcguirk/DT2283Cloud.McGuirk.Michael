@@ -1,3 +1,8 @@
+/*
+ * Michael McGuirk, D13123389 - DT228/3
+ * Cloud Computing. Lab 5. 15/10/2014
+ * Multiplication servlet to take multiply 2 values supplied by the user or default values in XML file.
+ */
 package ie.mydit.mcguirk.michael;
 
 import java.io.IOException;
@@ -21,6 +26,7 @@ public class LabServlet5_1Servlet extends HttpServlet {
 		
 		String emailAddress = null;
 		String thisURL = req.getRequestURI();
+		//fetch URL's to for login/out links 
 		String loginURL = userService.createLoginURL(thisURL);
 		String logoutURL = userService.createLogoutURL(thisURL);
 		
